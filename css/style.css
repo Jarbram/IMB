@@ -7,7 +7,7 @@
 html{
     font-size:62.5%;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(0deg, rgb(105, 149, 124) 0%, rgb(98, 148, 133) 100%);
+    background: linear-gradient(0deg, rgb(73, 75, 74) 0%, rgb(169, 173, 172) 100%);
     background-repeat: no-repeat;
     height: 100vh;
     
@@ -39,9 +39,9 @@ main{
     margin:30px 10px;
     height:380px;
     width:300px;
-    background-color: rgb(98, 148, 133);
+    background-color: rgb(169, 173, 172);
     border-radius: 15px;
-    box-shadow: 0px 0px 12px -2px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
     
 }
 .form p{
@@ -57,8 +57,17 @@ main{
     height:40px;
     width: 180px;
     font-size:1.8rem;
-    background:rgb(144, 190, 176);
+    background:rgb(255, 255, 255);
     
+}
+.form input:invalid {
+    animation: shake 300ms;
+    color: red;
+}
+@keyframes shake {
+    25% {transform: translateX(4px);}
+    50% { transform: translateX(-4px);}
+    75% {transform: translateX(4px);}
 }
 .form button{
     margin:20px  0;
@@ -68,8 +77,8 @@ main{
     text-align: center;  
     border:none;
     border-radius:40px;
-    background: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
+    background: rgb(144, 141, 141);
+    color:rgb(255, 255, 255);
     letter-spacing:1px;
     text-shadow:0;
     box-shadow: 0px 0px 12px -2px rgba(255, 255, 255, 0.9);
